@@ -1,5 +1,5 @@
 h1 {
-    Color: brown; /*Esto es para cambiar color de texto*/
+    Color: white; /*Esto es para cambiar color de texto*/
     margin:0px;
     padding: 10px;
     width: 100%;
@@ -8,18 +8,30 @@ h1 {
 }
 
 body {
-    background-color: #FAF2E6; /* Cambia el color del fondo de la pagina */
-    margin:0px; /* Cambia los margenes de toda la pagina */
-    padding: 0px; /* Cambia el espacio entre el margen y el borde */
+    /* Creamos una capa negra con 60% de opacidad (0.6) sobre la imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('../img/fondoLanding.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto hace que el fondo no se mueva al hacer scroll */
+    margin: 0px;
+    padding: 0px;
+    color: white; /* Esto asegura que todo el texto sea blanco por defecto */
 }
 
 nav {
-    margin: 40px;
-    padding: 10px;
-    width: 120px;
+
+    padding: 15px;
     text-align: center;
     position: absolute;
     right:0;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none; /* Esto es para quitar el subrayado de los enlaces */
 }
 
 header{
@@ -27,6 +39,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    background-color: black;
 }
 
 .prueba-parrafo {

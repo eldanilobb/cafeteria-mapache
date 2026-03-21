@@ -1,0 +1,47 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.tarjeta-cafe{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 370px;
+    margin: auto;
+}
+
+.linea-media{
+    color: white;
+    font-size: 27px;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    
+}
+
+@media (max-width: 1024px) {
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .tarjeta-cafe {
+        width: 95%;
+    }
+
+    .linea-media {
+        width: 90%;
+        font-size: 22px;
+    }
+}
