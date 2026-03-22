@@ -9,6 +9,13 @@
     margin: auto;
 }
 
+.tarjeta-cafe img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .linea-media{
     color: white;
     font-size: 27px;

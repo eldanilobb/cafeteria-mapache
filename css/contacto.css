@@ -59,7 +59,8 @@
 }
 
 .imagen-con-texto img {
-    width: 140px;
+    width: 100%;
+    max-width: 140px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
