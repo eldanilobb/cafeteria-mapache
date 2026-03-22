@@ -1,11 +1,3 @@
-.contenedor-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    
-}
-
 .tarjeta-cafe{
     background-color: rgba(0,0,0,0.8);
     color: white;

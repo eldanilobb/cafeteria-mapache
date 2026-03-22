@@ -1,10 +1,106 @@
 main {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     color: white;
-    opacity: 0,2;
-    width: 1300px;
+    opacity: 1;
+    max-width: 1200px;
+    width: 100%;
     margin: 50px auto;
     font-size: larger;
     text-align: center;
-    padding: 20px
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, minmax(180px, auto));
+    gap: 16px;
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.panel-grande-izq {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    aspect-ratio: 1 / 1;
+    min-height: 420px;
+    background-color: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-grande-izq img,
+.panel-grande-izq iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.panel-der-sup,
+.panel-der-inf {
+    grid-column: 2;
+    min-height: 180px;
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panel-der-sup p,
+.panel-der-inf p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.panel-der-sup {
+    grid-row: 1;
+}
+
+.panel-der-inf {
+    grid-row: 2;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .mosaico {
+        grid-template-columns: 1fr; /* Una columna */
+        grid-template-rows: auto auto auto; /* Tres filas */
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .panel-grande-izq {
+        grid-row: 1; /* Primera fila */
+        grid-column: 1;
+        aspect-ratio: 1 / 1;
+        min-height: 300px; /* Altura ajustada */
+    }
+    
+    .panel-der-sup {
+        grid-row: 2; /* Segunda fila */
+        grid-column: 1;
+    }
+    
+    .panel-der-inf {
+        grid-row: 3; /* Tercera fila */
+        grid-column: 1;
+    }
+     
+    .main {
+        margin: 20px auto;
+        padding: 16px;
+        font-size: medium;
+    }
 }

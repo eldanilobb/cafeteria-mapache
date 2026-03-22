@@ -40,6 +40,33 @@ header{
     align-items: center;
     padding: 0px;
     background-color: black;
+    position: relative; /* Para contener el nav absoluto */
+}
+
+/* Responsivo para header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila h1 y nav verticalmente */
+        text-align: center;
+    }
+    
+    nav {
+        position: static; /* Quita absoluto para que fluya */
+        padding: 10px;
+        right: auto;
+    }
+    
+    h1 {
+        font-size: 1.5em; /* Reduce tamaño en móviles */
+        padding: 10px 0;
+    }
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
 }
 
 .prueba-parrafo {

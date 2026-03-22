@@ -4,15 +4,104 @@
         <meta charset = "UTF-8">
         <title>Los mapaches</title>
         <link rel = "stylesheet" href = "css/global.css">
+        <link rel = "stylesheet" href = "css/contacto.css">
     </head>
 
     <header>
         <h1>
-            Nosotros, los mapaches
+            Tu, nosotros, los mapaches
         </h1>    
         <nav>
             <a href = "index.html">Inicio</a>
             <a href = "menu.html">Menu</a>
         </nav>
     </header>
+    <body>
+        <section class = "contenedor-grid">
+            <article class = "bloque-izquierdo">
+                Aqui es donde nos encontramos amante del mapache, a tu derecha puedes ver un formulario para contactar                                              
+                con nosotros por razones varias como apadrinar un mapache, dar recomendaciones para que mejoremos o 
+                simplemente dejar una reseña sobre nuestro servicio para que sea tomada en cuenta para futuros cambios, 
+                recuerda que nuestra cafeteria la hacemos todos ¡y eso te incluye!
+                <br> <br>
+                Tambien te dejamos una pequeña guia de nuestros queridos mapaches para que conozcas sus nombres, ocupaciones
+                y como identificarlos, que te diviertas.
+                <br> <br>
+                <article class="imagen-con-texto">
+                    <img src="img/admin.jpg" alt="Godofredo el mapache" width="140">
+                    <figure class="texto-junto">
+                        <figcaption><strong>El patron del grano</strong></figcaption>
+                        <p>
+                            El patron, alias Pablo, es el jefe del lugar aunque tiene cara amable si lo miras mal
+                            te despedira aunque ni si quiera trabajes aqui...de alguna manera.
+                        </p>
+                    </figure>
+                </article>
+                <article class = "imagen-con-texto">
+                    <img src = "img/actually.jpg" width="140">
+                    <figure class = "texto-junto">
+                        <figcaption><strong>El recaudador de sobras</strong></figcaption>
+                        <p>
+                            El recaudador, alias Robin Hood, es el contador de la empresa jamas se le pasa una moneda ni
+                            una lechuga en el suelo, que su aspecto no te engañe porque a la minima desaparecio tu comida
+                            y tal vez tu billetera con el pretexto de darselo a los necesitados (el mismo).
+                        </p>
+                    </figure>
+                </article>
+                <article class = "imagen-con-texto">
+                    <img src = "img/monster.jpg" width="140">
+                    <figure class = "texto-junto">
+                        <figcaption><strong>El inspector de sombras</strong></figcaption>
+                        <p>
+                            El inspector, alias Blanco, la verdad nadie sabe que hace aqui un dia llego y de alguna manera
+                            fue contratado, la leyenda dice que lo unico que hace es verificar que las sombras sigan siendo
+                            oscuras, aunque hay que decir que lo hace bastante bien a dia de hoy nunca hemos visto una sombra
+                            clara. Por cierto ni si quiera le gusta el cafe solo bebe bebidas energeticas ironico ¿no?
+                        </p>
+                    </figure>
+                </article>
+                <article class = "imagen-con-texto">
+                    <img src = "img/arma.jpg" width="140">
+                    <figure class = "texto-junto">
+                        <figcaption><strong>Agente 00-Basura</strong></figcaption>
+                        <p>
+                            El de seguridad, alias Bond, James Bond (el insiste en llamarlo asi) es el encargado de 
+                            mantener la seguridad y el orden en el local con sus garras y dientes, aunque una vez alguien
+                            le regalo una pistola lo cual fue una pesima idea ya que asalto la pizzeria de enfrente, porfavor
+                            no le den nada cercano a un arma de nuevo.
+                        </p>
+                    </figure>
+                </article>
+                <article class = "imagen-con-texto">
+                    <img src = "img/explosion.jpg" width="140">
+                    <figure class = "texto-junto">
+                        <figcaption><strong>El encargado de la limpieza</strong></figcaption>
+                        <p>
+                            El limpiador, alias Burbuja, este ser por mas tierno que parezca es un criminal de guerra en
+                            potencia se encarga de mantener limpio todo el establecimiento aunque la ultima vez para lograrlo
+                            exploto el lugar porque segun el si no hay lugar que limpiar entonces su trabajo ya esta hecho
+                            ¿porque lo contratamos de nuevo despues de la ultima vez? ¿porque no esta preso? nadie lo sabe.
+                        </p>
+                    </figure>
+                </article>
+            </article>
+            <article class = "bloque-derecho">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </body>
 </html>

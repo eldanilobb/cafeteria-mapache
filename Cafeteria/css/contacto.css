@@ -1,0 +1,128 @@
+.contenedor-grid{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloque-izquierdo{
+    flex: 0 0 45%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.bloque-derecho{
+    flex: 0 0 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.bloque-vacio{
+    flex: 0 0 20%;
+    min-height: 1px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px){
+    .contenedor-grid{
+        flex-direction: column;
+    }
+    .bloque-izquierdo,
+    .bloque-derecho,
+    .bloque-vacio {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.imagen-con-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.imagen-con-texto img {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.imagen-con-texto .texto-junto figcaption,
+.imagen-con-texto .texto-junto h3 {
+    margin: 0 0 6px 0;
+    color: #ffffff;
+}
+
+.imagen-con-texto .texto-junto p {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+@media (max-width: 768px){
+    .imagen-con-texto { 
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.bloque-derecho form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bloque-derecho label {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.bloque-derecho input,
+.bloque-derecho textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bloque-derecho textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.bloque-derecho button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.bloque-derecho button:hover {
+    background-color: #45a049;
+}
